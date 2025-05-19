@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#DFFFD6"> <!-- Light green background -->
+
+    <!-- Roll Numbers at Top-Right, Each on a New Line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/rollNumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22BTAI138"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/rollNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22BTAI139"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/rollNumber3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22BTAI140"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/rollNumber4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22BTAI141"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- File Name Input -->
+    <EditText
+        android:id="@+id/editTextFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="Enter file name"
+        android:layout_marginTop="12dp" />
+
+
+    <!-- Input Text Field -->
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Type your text here"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="12dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Text"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#388E3C"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+    <!-- View Button -->
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Saved Text"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#388E3C"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+    <!-- Output Text -->
+    <TextView
+        android:id="@+id/textViewOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved content will appear here"
+        android:paddingTop="16dp"
+        android:textSize="16sp" />
+</LinearLayout>
